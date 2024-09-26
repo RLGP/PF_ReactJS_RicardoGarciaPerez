@@ -1,4 +1,4 @@
-import productos from "../../Productos"
+import getProducts from "../../Productos"
 import { useParams } from "react-router-dom"
 import ItemDetail from "./ItemDetail"
 import { useState, useEffect } from "react";
@@ -8,7 +8,7 @@ const ItemDetailContainer =() => {
     const {idProduct} = useParams()
 
     useEffect(() => {
-      productos
+      getProducts
       .then((response) => {
         const newProduct = response.find((product) => product.id === idProduct)
         setProduct(newProduct)

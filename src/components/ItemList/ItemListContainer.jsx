@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react';
 import ItemList from './ItemList';
-import productos from "../../Productos";
+import getProducts from "../../Productos";
 import { useParams } from "react-router-dom";
 import "./Style.css";
 
-function ItemListContainer = ({saludo}) => {
+function ItemListContainer  ({saludo})  {
   const [products, setProducts] = useState([]);
   const {idCategory} = useParams();
   useEffect(() => {
-    productos
+    getProducts
     .then((response) => {
       if(idCategory){
         const newProducts = response.filter((producto) => producto.category === idCategory) 

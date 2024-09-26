@@ -1,11 +1,11 @@
-const productos = [
+const products = [
     {
-      idProduct:  1 ,
+      id:  1 ,
       name: "ejemplo1",
       description: "non",
       price: 12.99,
       image: "",
-      idCategory: "electronic",
+      Category: "electronic",
     },
     {
       idProduct: 2,
@@ -13,9 +13,14 @@ const productos = [
       description: "sis",
       price: 8.99,
       image: "",
-      idCategory: "others",
+      Category: "others",
     }
  
   ];
   
-  export default productos;
+  const getProducts = new Promise ((resolve, reject) => {
+    setTimeout(() => {
+      resolve(products)
+    }, 3000);
+    })
+  export default getProducts;
