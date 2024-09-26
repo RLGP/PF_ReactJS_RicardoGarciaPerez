@@ -7,7 +7,7 @@ const ItemDetail = ({ producto }) => {
   }
   return (
     <>
-      <div className="card mb-3" >
+      <div className="carta mb-3" >
         <div className="row g-0">
           <h3>{producto.name}</h3>
           <div className="col-md-4 contenedor">

@@ -16,7 +16,7 @@ const ItemList = ({ productos, isLoading  }) => {
             <Link to={`/item/${item.id}`}>  
             <img
               src={item.image}
-              className="imagenReceta card-img-top w-100 mx-auto p-2"
+              className="imagenProductoso card-img-top w-100 mx-auto p-2"
               alt={item.alt}/>
             </Link>
             <div className="card-body">

@@ -3,20 +3,35 @@
     padding: 0;
     box-sizing: border-box;
 }
-#container {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
+
+.imagenProductoso{
+    height: 300px;
+    width: 300px;
 }
 
 .card {
-    height: 150px;
-    width: 150px;
+    height: 400px;
+    width: 400px;
     background-color:#00a2ff;
     border-radius: 15px;
     text-align: center;
+    flex: auto;
+    margin: 20px;
 }
-
+.carta{
+    background-color:#00a2ff;
+    border-radius: 15px;
+    text-align: center;
+    flex: auto;
+    margin: 20px;
+}
+.img-fluid{
+    height: 400px;
+    width: 400px;
+}
+.itemDetail{
+    margin: 20px;
+}
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
     background-color: #ff9a00 !important;
     color: black;
@@ -26,4 +41,5 @@
     background-color: #ff9a00 !important;
     height: 45px;
     text-align: center;
+    align-items: center;
 }
