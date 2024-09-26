@@ -1,18 +1,18 @@
 const productos = [
     {
-      idProduct: "1" ,
-      nombre: "ejemplo1",
-      descripcion: "non",
-      precio: 12.99,
-      imagen: "",
+      idProduct:  1 ,
+      name: "ejemplo1",
+      description: "non",
+      price: 12.99,
+      image: "",
       idCategory: "electronic",
     },
     {
-      idProduct: "2",
-      nombre: "ejemplo2",
-      descripcion: "sis",
-      precio: 8.99,
-      imagen: "",
+      idProduct: 2,
+      name: "ejemplo2",
+      description: "sis",
+      price: 8.99,
+      image: "",
       idCategory: "others",
     }
  

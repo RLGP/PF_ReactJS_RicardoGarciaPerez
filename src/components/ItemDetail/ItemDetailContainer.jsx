@@ -4,14 +4,14 @@ import ItemDetail from "./ItemDetail"
 import { useState, useEffect } from "react";
 
 const ItemDetailContainer =() => {
-    const {product,setproduct} = useState({})
+    const [product,setProduct] = useState({})
     const {idProduct} = useParams()
 
     useEffect(() => {
       productos
       .then((response) => {
-        const newproduct = response.find((product) => product.id === idProduct)
-        setproduct(newproduct)
+        const newProduct = response.find((product) => product.id === idProduct)
+        setProduct(newProduct)
       })
       .catch((error) => console.log(error))
     }, [idProduct])

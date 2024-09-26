@@ -14,7 +14,7 @@ function App() {
     <Routes>
           <Route>
           <Route path="/" element={<ItemListContainer saludo="Nuestros productos" />} />
-          <Route path="category/:idCategory" element={<ItemListContainer/>}/>
+          <Route path="category/:idCategory" element={<ItemListContainer saludo="Nuestros productos"/>}/>
           <Route path="productos/:idProduct" element={<ItemDetailContainer/>}/>
           <Route path="*" element={<NoPage/>}/>
         </Route>

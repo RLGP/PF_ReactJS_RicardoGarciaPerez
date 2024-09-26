@@ -17,9 +17,9 @@ function NavBar() {
         </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav categories-navbar">
-              <li class="nav-item"><Link to={"/"} class="nav-link categorie-navbar">Productos</Link></li>
-              <li class="nav-item"><Link to={"/category/electronic"} class="nav-link categorie-navbar">Electrónicos</Link></li>
-              <li class="nav-item"><Link to={"/category/others"} class="nav-link categorie-navbar">Varios</Link></li>
+              <li class="nav-item"><Link to={"/"} class="nav-link category-navbar">Productos</Link></li>
+              <li class="nav-item"><Link to={"/category/electronic"} class="nav-link category-navbar">Electrónicos</Link></li>
+              <li class="nav-item"><Link to={"/category/others"} class="nav-link category-navbar">Varios</Link></li>
             </ul>
           </div>
           <CartWidget/>
