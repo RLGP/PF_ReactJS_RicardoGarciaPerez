@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 #container {
     display: flex;
     gap: 15px;
@@ -7,7 +12,18 @@
 .card {
     height: 150px;
     width: 150px;
-    background-color: rgb(20, 200, 220);
+    background-color:#00a2ff;
     border-radius: 15px;
+    text-align: center;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #ff9a00 !important;
+    color: black;
+    border: none;
+}
+.bg-info{
+    background-color: #ff9a00 !important;
+    height: 45px;
     text-align: center;
 }
