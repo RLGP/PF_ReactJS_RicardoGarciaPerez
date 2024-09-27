@@ -7,12 +7,12 @@ const ItemList = ({ productos, isLoading  }) => {
   if (isLoading) {
     return <h2 className="bg-info" >Loading...</h2>;
   }
-  return (
-    <>
+  return ( 
+    <div className='conteiner '>
       {productos.map((item, i) => (
-        <article key={i} className="col-sm-12 col-md-6 col-lg-3 mt-3">
+        <article key={i} className=" col-sm-12 col-md-6 col-lg-3 mt-3">
           <div className="card gradiente">
-            <h3>{item.name}</h3>
+          <Link to={`/item/${item.id}`}><h3>{item.name}</h3></Link>
             <Link to={`/item/${item.id}`}>  
             <img
               src={item.image}
@@ -20,12 +20,12 @@ const ItemList = ({ productos, isLoading  }) => {
               alt={item.alt}/>
             </Link>
             <div className="card-body">
-              <p className="precio">  Precio $ {item.price} </p>
+              <p className="precio-list">  Precio $ {item.price} </p>
             </div>
           </div>
         </article>
       ))}
-    </>
+    </div>
   )
 }
 

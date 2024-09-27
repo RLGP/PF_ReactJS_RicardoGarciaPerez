@@ -4,7 +4,7 @@ import {getProducts} from "../../Productos";
 import { useParams } from "react-router-dom";
 import "./Style.css";
 
-const ItemListContainer = () => {
+const ItemListContainer = ({}) => {
   const [items, setItems] = useState([]);
   const { category } = useParams();
   const [isLoading, setIsLoading] = useState(true);

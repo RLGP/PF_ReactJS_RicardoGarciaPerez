@@ -8,26 +8,56 @@
     height: 300px;
     width: 300px;
 }
-
+.conteiner {
+    display: flex;
+    gap: 0.5vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:50px
+}
+@media screen and (min-width: 1024px){
+    .conteiner {
+        display: flex;
+        gap: 10vh;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: -50px;
+        margin-top: -15px;
+    }
+}
 .card {
-    height: 400px;
+    height: 410px;
     width: 400px;
     background-color:#00a2ff;
     border-radius: 15px;
     text-align: center;
-    flex: auto;
     margin: 20px;
+}
+.precio{
+    font-size: x-large;
+    font-weight: bold;
+    color: black;
+}
+.precio-list{
+    background-color: #ff9a00;
+    border-radius: 15px;
+    font-size: x-large;
+    font-weight: bold;
+    color: black;
 }
 .carta{
     background-color:#00a2ff;
     border-radius: 15px;
     text-align: center;
-    flex: auto;
     margin: 20px;
 }
 .img-fluid{
     height: 400px;
     width: 400px;
+}
+.card-text{
+    color: black;
+    font-size: xx-large;
 }
 .itemDetail{
     margin: 20px;
@@ -36,10 +66,28 @@
     background-color: #ff9a00 !important;
     color: black;
     border: none;
+    font-size: x-large;
+    font-weight: bold;
 }
 .bg-info{
     background-color: #ff9a00 !important;
     height: 45px;
     text-align: center;
     align-items: center;
+}
+h3{
+    color: black;
+    font-size: xx-large;
+}
+a {
+    text-decoration: none; 
+  }
+footer{
+    text-align: center;
+    background-color:	#ff9a00;
+    font-weight:bold;
+    font-size: larger;
+    margin-bottom: -21px;
+    margin-top: 110px;
+    color: black;
 }
