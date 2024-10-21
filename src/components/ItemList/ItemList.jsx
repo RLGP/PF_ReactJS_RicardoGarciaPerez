@@ -18,10 +18,10 @@ const ItemList = ({ productos, isLoading  }) => {
               src={item.image}
               className="imagenProductoso card-img-top w-100 mx-auto p-2"
               alt={item.alt}/>
-            </Link>
             <div className="card-body">
               <p className="precio-list">  Precio $ {item.price} </p>
             </div>
+            </Link>
           </div>
         </article>
       ))}

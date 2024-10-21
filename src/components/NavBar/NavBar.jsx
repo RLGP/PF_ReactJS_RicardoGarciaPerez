@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link,Outlet } from "react-router-dom"
 import "./NavBar.css";
 import aperture_logo_negro from "../../assets/aperture_logo_negro.png";
