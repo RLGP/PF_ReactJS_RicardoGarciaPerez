@@ -4,11 +4,11 @@ import { getFirestore, collection, addDoc } from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID
+  authDomain: "aperture-science-13a2c.firebaseapp.com",
+  projectId: "aperture-science-13a2c",
+  storageBucket: "aperture-science-13a2c.appspot.com",
+  messagingSenderId: "900897931061",
+  appId: "1:900897931061:web:b4b2fccc062ff13519567c"
 };
 
 // Initialize Firebase
